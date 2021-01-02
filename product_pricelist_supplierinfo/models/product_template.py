@@ -3,7 +3,7 @@
 # Copyright 2019 Tecnativa - Carlos Dauden
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo import models, tools
+from odoo import fields, models, tools
 
 
 class ProductTemplate(models.Model):
@@ -13,41 +13,25 @@ class ProductTemplate(models.Model):
             self, rule, date=None, quantity=None, product_id=None):
         """Method for getting the price from supplier info."""
         self.ensure_one()
+        price = 0.0
+        product = self.product_variant_id
         if product_id:
-            domain = [
-                '|',
-                ('product_id', '=', product_id),
-                ('product_tmpl_id', '=', self.id),
-            ]
-        else:
-            domain = [
-                ('product_tmpl_id', '=', self.id),
-            ]
-        if not rule.no_supplierinfo_min_quantity and quantity:
-            domain += [
-                '|',
-                ('min_qty', '=', False),
-                ('min_qty', '<=', quantity),
-            ]
-        if date:
-            domain += [
-                '|',
-                ('date_start', '=', False),
-                ('date_start', '<=', date),
-                '|',
-                ('date_end', '=', False),
-                ('date_end', '>=', date),
-            ]
-        # We use a different default order because we are interested in getting
-        # the price for lowest minimum quantity if no_supplierinfo_min_quantity
-        supplierinfos = self.env['product.supplierinfo'].search(
-            domain, order='min_qty,sequence,price',
-        )
+            product = product.browse(product_id)
         if rule.no_supplierinfo_min_quantity:
-            price = supplierinfos[:1].price
-        else:
-            price = supplierinfos[-1:].price
+            quantity = 1.0
+        seller = product._select_seller(
+            partner_id=rule.filter_supplier_id, quantity=quantity, date=date)
+        if seller:
+            price = seller._get_supplierinfo_pricelist_price()
         if price:
+            # We need to convert the price if the pricelist and seller have
+            # different currencies so the price have the pricelist currency
+            if rule.currency_id != seller.currency_id:
+                convert_date = date or self.env.context.get(
+                    'date', fields.Date.today())
+                price = seller.currency_id._convert(
+                    price, rule.currency_id, seller.company_id, convert_date)
+
             # We have to replicate this logic in this method as pricelist
             # method are atomic and we can't hack inside.
             # Verbatim copy of part of product.pricelist._compute_price_rule.
