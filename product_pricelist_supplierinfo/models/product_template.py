@@ -3,6 +3,7 @@
 # Copyright 2019 Tecnativa - Carlos Dauden
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
+from datetime import datetime
 from odoo import fields, models, tools
 
 
@@ -19,10 +20,17 @@ class ProductTemplate(models.Model):
             product = product.browse(product_id)
         if rule.no_supplierinfo_min_quantity:
             quantity = 1.0
-        seller = product._select_seller(
-            partner_id=rule.filter_supplier_id, quantity=quantity, date=date)
-        if seller:
-            price = seller._get_supplierinfo_pricelist_price()
+        # The product_variant_id returns empty recordset if template is not
+        # active, so we must ensure variant exists or _select_seller fails.
+        if product:
+            if type(date) == datetime:
+                date = date.date()
+            seller = product._select_seller(
+                partner_id=rule.filter_supplier_id,
+                quantity=quantity,
+                date=date)
+            if seller:
+                price = seller._get_supplierinfo_pricelist_price()
         if price:
             # We need to convert the price if the pricelist and seller have
             # different currencies so the price have the pricelist currency
@@ -37,6 +45,12 @@ class ProductTemplate(models.Model):
             # Verbatim copy of part of product.pricelist._compute_price_rule.
             qty_uom_id = self._context.get('uom') or self.uom_id.id
             price_uom = self.env['uom.uom'].browse([qty_uom_id])
+
+            # We need to convert the price to the uom used on the sale, if the
+            # uom on the seller is a different one that the one used there.
+            if seller and seller.product_uom != price_uom:
+                price = seller.product_uom._compute_price(price, price_uom)
+
             convert_to_price_uom = (
                 lambda price: self.uom_id._compute_price(
                     price, price_uom))
