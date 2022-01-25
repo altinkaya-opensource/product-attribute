@@ -15,11 +15,13 @@ setuptools.setup(
         'odoo12-addon-product_bom_revision',
         'odoo12-addon-product_brand',
         'odoo12-addon-product_category_active',
+        'odoo12-addon-product_category_type',
         'odoo12-addon-product_code_mandatory',
         'odoo12-addon-product_code_unique',
         'odoo12-addon-product_cost_security',
         'odoo12-addon-product_custom_info',
         'odoo12-addon-product_dimension',
+        'odoo12-addon-product_documentation_set',
         'odoo12-addon-product_equivalent_category',
         'odoo12-addon-product_firmware_version',
         'odoo12-addon-product_logistics_uom',
@@ -53,6 +55,7 @@ setuptools.setup(
         'odoo12-addon-product_supplierinfo_revision',
         'odoo12-addon-product_template_copy_attributes',
         'odoo12-addon-product_template_tags',
+        'odoo12-addon-product_uom_measure_type',
         'odoo12-addon-product_uom_po_domain',
         'odoo12-addon-product_uom_use_type',
         'odoo12-addon-product_variant_inactive',
@@ -62,5 +65,6 @@ setuptools.setup(
     classifiers=[
         'Programming Language :: Python',
         'Framework :: Odoo',
+        'Framework :: Odoo :: 12.0',
     ]
 )
