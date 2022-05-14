@@ -16,7 +16,7 @@ class Product(models.Model):
         "Dimensional UoM",
         domain=lambda self: self._get_dimension_uom_domain(),
         help="UoM for length, height, width",
-        default=lambda self: self.env.ref("uom.product_uom_meter"),
+        default=lambda self: self.env.ref("uom.product_uom_cm"),
     )
 
     @api.model
