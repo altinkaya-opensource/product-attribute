@@ -92,7 +92,12 @@ class ProductProduct(models.Model):
                 else:
                     previous_images -= image
                     # Update existing records
-                    image.write(image._convert_to_write(image._cache))
+                    vals = image._cache
+                    if isinstance(vals.get('owner_ref_id'), tuple):
+                        vals.update(
+                            {'owner_ref_id': "%s,%s" % (image._cache['owner_ref_id'][0],
+                                                        image._cache['owner_ref_id'][1])})
+                    image.write(image._convert_to_write(vals))
             for image in previous_images:
                 # Images removed
                 if not image.product_variant_ids:
