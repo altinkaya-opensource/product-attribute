@@ -53,7 +53,10 @@ class ProductTemplate(models.Model):
     @api.model
     def _calc_volume(self, product_length, product_height, product_width, uom_id, volume_uom_id):
         uom_litre = self.env.ref("uom.product_uom_litre")
-        volume_litre = (product_length * product_height * product_width * 1000.0) / (uom_id.factor ** 3)
+        try:
+            volume_litre = (product_length * product_height * product_width * 1000.0) / (uom_id.factor ** 3)
+        except ZeroDivisionError:
+            volume_litre = 0
         return uom_litre._compute_quantity(qty=volume_litre, to_unit=volume_uom_id, round=False)
 
     # Define all the related fields in product.template with 'readonly=False'
