@@ -20,8 +20,17 @@
                                'form_view_ref': 'product_multi_image.image_form_view',
                                'kanban_view_ref': 'product_multi_image.image_kanban_view',
                            }"
-                           mode="kanban"
-                    />
+                           mode="tree"
+                    >
+                        <tree>
+                            <field name="sequence" widget="handle"/>
+                            <field name="image_main" widget="image" options="{'size': [100, 100]}"/>
+                            <field name="name"/>
+                            <field name="product_variant_ids" widget="many2many_tags"/>
+                            <field name="owner_model" invisible="1"/>
+                            <field name="owner_id" invisible="1"/>
+                        </tree>
+                    </field>
                 </page>
             </xpath>
         </field>
