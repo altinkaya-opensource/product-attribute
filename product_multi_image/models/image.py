@@ -8,6 +8,13 @@ from odoo import api, fields, models
 class Image(models.Model):
     _inherit = "base_multi_image.image"
 
+    is_published = fields.Boolean(
+        string="Published",
+        default=True,
+        help="If you uncheck this field, this image will not be shown in "
+        "the website.",
+    )
+
     @api.model
     def _default_product_image_storage(self):
         """
