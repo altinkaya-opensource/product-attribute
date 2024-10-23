@@ -16,7 +16,7 @@ class Product(models.Model):
         "Dimensional UoM",
         domain=lambda self: self._get_dimension_uom_domain(),
         help="UoM for length, height, width",
-        default=lambda self: self.env.ref("uom.product_uom_meter"),
+        default=lambda self: self.env.ref("uom.product_uom_cm"),
     )
 
     @api.model
@@ -51,23 +51,13 @@ class ProductTemplate(models.Model):
         )
 
     @api.model
-    def _calc_volume(
-        self, product_length, product_height, product_width, uom_id, volume_uom_id
-    ):
-        # TODO: in v14 use native UoM data for m3 "uom.product_uom_cubic_meter"
+    def _calc_volume(self, product_length, product_height, product_width, uom_id, volume_uom_id):
         uom_litre = self.env.ref("uom.product_uom_litre")
-        volume_m3 = 0
-
-        if product_length and product_height and product_width and uom_id:
-            length_m = self._convert_to_meters(product_length, uom_id)
-            height_m = self._convert_to_meters(product_height, uom_id)
-            width_m = self._convert_to_meters(product_width, uom_id)
-            volume_m3 = length_m * height_m * width_m
-
-        volume_litre = volume_m3 * 1000
-        return uom_litre._compute_quantity(
-            qty=volume_litre, to_unit=volume_uom_id, round=False,
-        )
+        try:
+            volume_litre = (product_length * product_height * product_width * 1000.0) / (uom_id.factor ** 3)
+        except ZeroDivisionError:
+            volume_litre = 0
+        return uom_litre._compute_quantity(qty=volume_litre, to_unit=volume_uom_id, round=False)
 
     # Define all the related fields in product.template with 'readonly=False'
     # to be able to modify the values from product.template.
