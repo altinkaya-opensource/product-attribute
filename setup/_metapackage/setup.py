@@ -89,6 +89,7 @@ setuptools.setup(
         'odoo-addon-product_uom_use_type>=16.0dev,<16.1dev',
         'odoo-addon-product_usability>=16.0dev,<16.1dev',
         'odoo-addon-product_variant_attribute_name_manager>=16.0dev,<16.1dev',
+        'odoo-addon-purchase_product_template_tags>=16.0dev,<16.1dev',
         'odoo-addon-sale_product_template_tags>=16.0dev,<16.1dev',
         'odoo-addon-stock_lot_is_archived>=16.0dev,<16.1dev',
         'odoo-addon-stock_product_template_tags>=16.0dev,<16.1dev',
