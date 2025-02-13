@@ -17,6 +17,7 @@
                     placeholder="(keep empty for being visible for all variants)"
                 />
             </field>
+            <field name="is_published"/>
         </field>
     </record>
 
