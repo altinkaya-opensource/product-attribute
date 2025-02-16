@@ -6,15 +6,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-07-13 00:11+0000\n"
-"Last-Translator: Pedro Castro Silva <pedrocs@exo.pt>\n"
-"Language-Team: none\n"
-"Language: pt\n"
+"POT-Creation-Date: 2025-02-14 19:19+0000\n"
+"PO-Revision-Date: 2025-02-14 19:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"Plural-Forms: \n"
+
+#. module: product_code_unique
+#: model:ir.model.fields,field_description:product_code_unique.field_product_product__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Alterações do conjunto de alterações"
+
+#. module: product_code_unique
+#: model:ir.model.fields,field_description:product_code_unique.field_product_product__changeset_ids
+msgid "Changesets"
+msgstr "Conjunto de alterações"
+
+#. module: product_code_unique
+#: model:ir.model.fields,field_description:product_code_unique.field_product_product__count_changesets
+msgid "Count Changesets"
+msgstr "Contagem de conjuntos de alterações"
+
+#. module: product_code_unique
+#: model:ir.model.fields,field_description:product_code_unique.field_product_product__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Conte as alterações pendentes do conjunto de alterações"
+
+#. module: product_code_unique
+#: model:ir.model.fields,field_description:product_code_unique.field_product_product__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Conte os conjuntos de alterações pendentes"
 
 #. module: product_code_unique
 #: model:ir.model.constraint,message:product_code_unique.constraint_product_product_default_code_uniq
@@ -25,3 +49,28 @@ msgstr "A Referência Interna tem que ser única na base de dados!"
 #: model:ir.model,name:product_code_unique.model_product_product
 msgid "Product Variant"
 msgstr "Variante de Produto"
+
+#. module: product_code_unique
+#: model:ir.model.fields,field_description:product_code_unique.field_product_product__smart_search
+msgid "Smart Search"
+msgstr "Pesquisa inteligente"
+
+#. module: product_code_unique
+#: model:ir.model.fields,help:product_code_unique.field_product_product__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "O número de alterações pendentes deste registo"
+
+#. module: product_code_unique
+#: model:ir.model.fields,help:product_code_unique.field_product_product__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "O número de conjuntos de alterações pendentes deste registo"
+
+#. module: product_code_unique
+#: model:ir.model.fields,help:product_code_unique.field_product_product__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "O número total de conjuntos de alterações deste registo"
+
+#. module: product_code_unique
+#: model:ir.model.fields,field_description:product_code_unique.field_product_product__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "O utilizador pode ver o conjunto de alterações"

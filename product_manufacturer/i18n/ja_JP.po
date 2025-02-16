@@ -1,0 +1,112 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_manufacturer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-14 19:18+0000\n"
+"PO-Revision-Date: 2025-02-14 19:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__changeset_change_ids
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "チェンジセットの変更"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__changeset_ids
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__changeset_ids
+msgid "Changesets"
+msgstr "チェンジセット"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__count_changesets
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__count_changesets
+msgid "Count Changesets"
+msgstr "チェンジセット数"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "保留中のチェンジセットの変更をカウント"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__count_pending_changesets
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "保留中のチェンジセットをカウント"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_id
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_id
+#: model_terms:ir.ui.view,arch_db:product_manufacturer.product_product_view_form_easy_inherit_product_manufacturer
+#: model_terms:ir.ui.view,arch_db:product_manufacturer.product_template_manufacturer_form_view
+msgid "Manufacturer"
+msgstr "製造者"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_pref
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_pref
+msgid "Manufacturer Product Code"
+msgstr "メーカー製品コード"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_pname
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_pname
+msgid "Manufacturer Product Name"
+msgstr "メーカー 製品名"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_purl
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_purl
+msgid "Manufacturer Product URL"
+msgstr "メーカー製品URL"
+
+#. module: product_manufacturer
+#: model:ir.model,name:product_manufacturer.model_product_template
+msgid "Product"
+msgstr "プロダクト"
+
+#. module: product_manufacturer
+#: model:ir.model,name:product_manufacturer.model_product_product
+msgid "Product Variant"
+msgstr "プロダクト"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__smart_search
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__smart_search
+msgid "Smart Search"
+msgstr "スマート検索"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,help:product_manufacturer.field_product_product__count_pending_changeset_changes
+#: model:ir.model.fields,help:product_manufacturer.field_product_template__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "このレコードの保留中の変更数"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,help:product_manufacturer.field_product_product__count_pending_changesets
+#: model:ir.model.fields,help:product_manufacturer.field_product_template__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "このレコードの保留中のチェンジセットの数"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,help:product_manufacturer.field_product_product__count_changesets
+#: model:ir.model.fields,help:product_manufacturer.field_product_template__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "このレコードの全体のチェンジセット数"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__user_can_see_changeset
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "ユーザーは変更セットを見ることができます"

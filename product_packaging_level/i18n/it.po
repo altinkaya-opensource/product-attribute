@@ -6,15 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-05-23 09:36+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
-"Language-Team: none\n"
-"Language: it\n"
+"POT-Creation-Date: 2025-02-14 19:18+0000\n"
+"PO-Revision-Date: 2025-02-14 19:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"Plural-Forms: \n"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__active
@@ -76,11 +75,11 @@ msgstr "È predefinito"
 #: code:addons/product_packaging_level/models/product_packaging.py:0
 #, python-format
 msgid ""
-"It is forbidden to have different packagings with the same level for a given "
-"product ({})."
+"It is forbidden to have different packagings with the same level for a given"
+" product ({})."
 msgstr ""
-"Non è permesso avere imballaggi differenti con lo stesso livello per un dato "
-"prodotto ({})."
+"Non è permesso avere imballaggi differenti con lo stesso livello per un dato"
+" prodotto ({})."
 
 #. module: product_packaging_level
 #: model_terms:ir.ui.view,arch_db:product_packaging_level.view_product_packaging_level_form
@@ -207,8 +206,8 @@ msgstr "Il primo della sequenza è il predefinito."
 #, python-format
 msgid "There must be one product packaging level set as \"Is Default\"."
 msgstr ""
-"Deve esserci un livello imballaggio prodotto impostato come \"È predefinito"
-"\"."
+"Deve esserci un livello imballaggio prodotto impostato come \"È "
+"predefinito\"."
 
 #. module: product_packaging_level
 #: model:ir.model.fields.selection,name:product_packaging_level.selection__product_packaging_level__name_policy__user_defined
@@ -220,12 +219,9 @@ msgstr "Definito dall'utente"
 #: model:ir.model.fields,help:product_packaging_level.field_product_packaging_level__name_policy
 msgid ""
 "config to set name of product packaging. Three options:- The package level "
-"name (default)- The package type name (if groups='stock."
-"group_tracking_lot')- user defined: free text value defined"
+"name (default)- The package type name (if "
+"groups='stock.group_tracking_lot')- user defined: free text value defined"
 msgstr ""
 "Configurare per impostare il nome dell'imballo prodotto. Tre opzioni: - Il "
-"nome livello collo (predefinito) - Il nome tipo collo (se gruppi='stock."
-"group_tracking_lot') - definito dall'utente: testo libero"
-
-#~ msgid "Level Sequence"
-#~ msgstr "Sequenza livello"
+"nome livello collo (predefinito) - Il nome tipo collo (se "
+"gruppi='stock.group_tracking_lot') - definito dall'utente: testo libero"

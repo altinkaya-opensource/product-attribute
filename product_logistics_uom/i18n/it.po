@@ -6,84 +6,63 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-06-07 13:38+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
-"Language-Team: none\n"
-"Language: it\n"
+"POT-Creation-Date: 2025-02-14 19:19+0000\n"
+"PO-Revision-Date: 2025-02-14 19:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"Plural-Forms: \n"
 
 #. module: product_logistics_uom
 #: model_terms:ir.ui.view,arch_db:product_logistics_uom.product_template_form_view
 msgid ""
-"<span attrs=\"{'invisible':[('show_volume_uom_warning', '=', False)]}\" "
-"groups=\"!uom.group_uom\">\n"
-"                    <i class=\"fa fa-fw fa-warning text-warning\" title="
-"\"Value too small for the selected uom. Select another uom to display the "
-"value.\"/>\n"
+"<span attrs=\"{'invisible':[('show_volume_uom_warning', '=', False)]}\" groups=\"!uom.group_uom\">\n"
+"                    <i class=\"fa fa-fw fa-warning text-warning\" title=\"Value too small for the selected uom. Select another uom to display the value.\"/>\n"
 "                </span>"
 msgstr ""
-"<span attrs=\"{'invisible':[('show_volume_uom_warning', '=', False)]}\" "
-"groups=\"!uom.group_uom\">\n"
-"                    <i class=\"fa fa-fw fa-warning text-warning\" title="
-"\"Valore troppo piccolo per l'UdM selezionata. Selezionare un'altra UdM per "
-"visualizzare il valore.\"/>\n"
+"<span attrs=\"{'invisible':[('show_volume_uom_warning', '=', False)]}\" groups=\"!uom.group_uom\">\n"
+"                    <i class=\"fa fa-fw fa-warning text-warning\" title=\"Valore troppo piccolo per l'UdM selezionata. Selezionare un'altra UdM per visualizzare il valore.\"/>\n"
 "                </span>"
 
 #. module: product_logistics_uom
 #: model_terms:ir.ui.view,arch_db:product_logistics_uom.product_template_form_view
 msgid ""
 "<span attrs=\"{'invisible':[('show_volume_uom_warning', '=', False)]}\">\n"
-"                    <i class=\"fa fa-fw fa-warning text-warning\" title="
-"\"Value too small for the selected uom. Select another uom to display the "
-"value.\"/>\n"
+"                    <i class=\"fa fa-fw fa-warning text-warning\" title=\"Value too small for the selected uom. Select another uom to display the value.\"/>\n"
 "                </span>"
 msgstr ""
 "<span attrs=\"{'invisible':[('show_volume_uom_warning', '=', False)]}\">\n"
-"                    <i class=\"fa fa-fw fa-warning text-warning\" title="
-"\"Valore troppo piccolo per l'UdM selezionata. Selezionare un'altra UdM per "
-"visualizzare il valore.\"/>\n"
+"                    <i class=\"fa fa-fw fa-warning text-warning\" title=\"Valore troppo piccolo per l'UdM selezionata. Selezionare un'altra UdM per visualizzare il valore.\"/>\n"
 "                </span>"
 
 #. module: product_logistics_uom
 #: model_terms:ir.ui.view,arch_db:product_logistics_uom.product_template_form_view
 msgid ""
-"<span attrs=\"{'invisible':[('show_weight_uom_warning', '=', False)]}\" "
-"groups=\"!uom.group_uom\">\n"
-"                    <i class=\"fa fa-fw fa-warning text-warning\" title="
-"\"Value too small for the selected uom. Select another uom to display the "
-"value.\"/>\n"
+"<span attrs=\"{'invisible':[('show_weight_uom_warning', '=', False)]}\" groups=\"!uom.group_uom\">\n"
+"                    <i class=\"fa fa-fw fa-warning text-warning\" title=\"Value too small for the selected uom. Select another uom to display the value.\"/>\n"
 "                </span>"
 msgstr ""
-"<span attrs=\"{'invisible':[('show_weight_uom_warning', '=', False)]}\" "
-"groups=\"!uom.group_uom\">\n"
-"                    <i class=\"fa fa-fw fa-warning text-warning\" title="
-"\"Valore troppo piccolo per l'UdM selezionata. Selezionare un'altra UdM per "
-"visualizzare il valore.\"/>\n"
+"<span attrs=\"{'invisible':[('show_weight_uom_warning', '=', False)]}\" groups=\"!uom.group_uom\">\n"
+"                    <i class=\"fa fa-fw fa-warning text-warning\" title=\"Valore troppo piccolo per l'UdM selezionata. Selezionare un'altra UdM per visualizzare il valore.\"/>\n"
 "                </span>"
 
 #. module: product_logistics_uom
 #: model_terms:ir.ui.view,arch_db:product_logistics_uom.product_template_form_view
 msgid ""
 "<span attrs=\"{'invisible':[('show_weight_uom_warning', '=', False)]}\">\n"
-"                    <i class=\"fa fa-fw fa-warning text-warning\" title="
-"\"Value too small for the selected uom. Select another uom to display the "
-"value.\"/>\n"
+"                    <i class=\"fa fa-fw fa-warning text-warning\" title=\"Value too small for the selected uom. Select another uom to display the value.\"/>\n"
 "                </span>"
 msgstr ""
 "<span attrs=\"{'invisible':[('show_weight_uom_warning', '=', False)]}\">\n"
-"                    <i class=\"fa fa-fw fa-warning text-warning\" title="
-"\"Valore troppo piccolo per l'UdM selezionata. Selezionare un'altra UdM per "
-"visualizzare il valore.\"/>\n"
+"                    <i class=\"fa fa-fw fa-warning text-warning\" title=\"Valore troppo piccolo per l'UdM selezionata. Selezionare un'altra UdM per visualizzare il valore.\"/>\n"
 "                </span>"
 
 #. module: product_logistics_uom
 #: model:ir.model,name:product_logistics_uom.model_res_config_settings
 msgid "Config Settings"
-msgstr "Impostazioni di configurazione"
+msgstr "Impostazioni raggruppamento approvvigionamento acquisti"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_res_config_settings__product_default_length_uom_id
@@ -114,12 +93,6 @@ msgstr "Unità di misura predefiita per esprimere il volume di prodotto"
 #: model:ir.model.fields,help:product_logistics_uom.field_res_config_settings__product_default_weight_uom_id
 msgid "Default unit of measure to express product weight"
 msgstr "Unità di misura predefinita per esprimere il peso di prodotto"
-
-#. module: product_logistics_uom
-#: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__weight
-#: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__weight
-msgid "Gross Weight"
-msgstr "Peso lordo"
 
 #. module: product_logistics_uom
 #: model:ir.model,name:product_logistics_uom.model_product_template
@@ -179,7 +152,7 @@ msgstr "Il peso nell'UdM del peso del prodotto."
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__volume
 #: model_terms:ir.ui.view,arch_db:product_logistics_uom.product_template_form_view
 msgid "Volume"
-msgstr "Volume"
+msgstr ""
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__volume_uom_id
@@ -200,9 +173,11 @@ msgid "Volume unit of measure label"
 msgstr "Etichetta unità di misura volume"
 
 #. module: product_logistics_uom
+#: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__weight
+#: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__weight
 #: model_terms:ir.ui.view,arch_db:product_logistics_uom.product_template_form_view
 msgid "Weight"
-msgstr "Peso"
+msgstr "Peso lordo"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__weight_uom_id
@@ -221,6 +196,3 @@ msgstr "Peso nell'UdM del prodotto"
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__weight_uom_name
 msgid "Weight unit of measure label"
 msgstr "Etichetta unità di misura del peso"
-
-#~ msgid "Product Uom Readonly"
-#~ msgstr "Prodotto Udm sola lettura"

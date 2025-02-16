@@ -1,0 +1,112 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_manufacturer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-14 19:18+0000\n"
+"PO-Revision-Date: 2025-02-14 19:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__changeset_change_ids
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Changeset Changes"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__changeset_ids
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__changeset_ids
+msgid "Changesets"
+msgstr "Changesets"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__count_changesets
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__count_changesets
+msgid "Count Changesets"
+msgstr "Count Changesets"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Count Pending Changeset Changes"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__count_pending_changesets
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Count Pending Changesets"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_id
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_id
+#: model_terms:ir.ui.view,arch_db:product_manufacturer.product_product_view_form_easy_inherit_product_manufacturer
+#: model_terms:ir.ui.view,arch_db:product_manufacturer.product_template_manufacturer_form_view
+msgid "Manufacturer"
+msgstr "Manufacturer"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_pref
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_pref
+msgid "Manufacturer Product Code"
+msgstr "Manufacturer Product Code"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_pname
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_pname
+msgid "Manufacturer Product Name"
+msgstr "Manufacturer Product Name"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_purl
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_purl
+msgid "Manufacturer Product URL"
+msgstr "Manufacturer Product URL"
+
+#. module: product_manufacturer
+#: model:ir.model,name:product_manufacturer.model_product_template
+msgid "Product"
+msgstr "Product"
+
+#. module: product_manufacturer
+#: model:ir.model,name:product_manufacturer.model_product_product
+msgid "Product Variant"
+msgstr "Product Variant"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__smart_search
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__smart_search
+msgid "Smart Search"
+msgstr "Smart Search"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,help:product_manufacturer.field_product_product__count_pending_changeset_changes
+#: model:ir.model.fields,help:product_manufacturer.field_product_template__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "The number of pending changes of this record"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,help:product_manufacturer.field_product_product__count_pending_changesets
+#: model:ir.model.fields,help:product_manufacturer.field_product_template__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "The number of pending changesets of this record"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,help:product_manufacturer.field_product_product__count_changesets
+#: model:ir.model.fields,help:product_manufacturer.field_product_template__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "The overall number of changesets of this record"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__user_can_see_changeset
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "User Can See Changeset"

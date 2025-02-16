@@ -4,17 +4,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 14.0\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2021-05-09 16:47+0000\n"
-"Last-Translator: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>\n"
-"Language-Team: none\n"
-"Language: nl\n"
+"POT-Creation-Date: 2025-02-14 19:18+0000\n"
+"PO-Revision-Date: 2025-02-14 19:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Content-Level: text/plain; charset=UTF-8\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"Plural-Forms: \n"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__active
@@ -44,7 +43,7 @@ msgstr "Aangemaakt op"
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__default_lang_id
 msgid "Default Language"
-msgstr ""
+msgstr "Standaard Taal"
 
 #. module: product_packaging_level
 #: model:product.packaging.level,name:product_packaging_level.product_packaging_level_default
@@ -76,9 +75,11 @@ msgstr "Is standaard"
 #: code:addons/product_packaging_level/models/product_packaging.py:0
 #, python-format
 msgid ""
-"It is forbidden to have different packagings with the same level for a given "
-"product ({})."
+"It is forbidden to have different packagings with the same level for a given"
+" product ({})."
 msgstr ""
+"Het is verboden om verschillende verpakkingen met hetzelfde niveau te hebben"
+" voor een bepaald product ({})."
 
 #. module: product_packaging_level
 #: model_terms:ir.ui.view,arch_db:product_packaging_level.view_product_packaging_level_form
@@ -86,6 +87,8 @@ msgid ""
 "Language option for packaging names used in case policy names is packaging "
 "by levels"
 msgstr ""
+"Taaloptie voor verpakkingsnamen gebruikt in geval beleidsnamen is verpakking"
+" per niveau"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level____last_update
@@ -105,7 +108,7 @@ msgstr "Laatst bijgewerkt op"
 #. module: product_packaging_level
 #: model:ir.model,name:product_packaging_level.model_product_packaging_level
 msgid "Level management for product.packaging"
-msgstr ""
+msgstr "Niveaubeheer voor product.verpakking"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__name
@@ -116,7 +119,7 @@ msgstr "Naam"
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging__name_policy
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__name_policy
 msgid "Name Policy"
-msgstr ""
+msgstr "Naam Beleid"
 
 #. module: product_packaging_level
 #. odoo-python
@@ -129,12 +132,12 @@ msgstr ""
 #. module: product_packaging_level
 #: model:ir.model.fields.selection,name:product_packaging_level.selection__product_packaging_level__name_policy__by_package_level
 msgid "Package Level Name"
-msgstr ""
+msgstr "Naam pakketniveau"
 
 #. module: product_packaging_level
 #: model:ir.model.fields.selection,name:product_packaging_level.selection__product_packaging_level__name_policy__by_package_type
 msgid "Package Type Name"
-msgstr ""
+msgstr "Pakkettype Naam"
 
 #. module: product_packaging_level
 #: model_terms:ir.ui.view,arch_db:product_packaging_level.product_packaging_tree_view
@@ -157,6 +160,9 @@ msgid ""
 "Packaging name based on package type is only allowed after activating the "
 "option Packages in Inventory > Configuration > Settings !"
 msgstr ""
+"Verpakkingsnaam gebaseerd op verpakkingstype is alleen toegestaan na het "
+"activeren van de optie Verpakkingen in Inventaris &gt; Configuratie &gt; "
+"Instellingen !"
 
 #. module: product_packaging_level
 #: model:ir.model,name:product_packaging_level.model_product_packaging
@@ -186,12 +192,12 @@ msgstr "Volgorde"
 #. module: product_packaging_level
 #: model:ir.model,name:product_packaging_level.model_stock_package_type
 msgid "Stock package type"
-msgstr ""
+msgstr "Verpakkingstype:"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,help:product_packaging_level.field_product_packaging__sequence
 msgid "The first in the sequence is the default one."
-msgstr ""
+msgstr "De eerste in de reeks is de standaard."
 
 #. module: product_packaging_level
 #. odoo-python
@@ -203,16 +209,17 @@ msgstr "Er dient een verpakkingslevel te zijn ingesteld als \"Is standaard\"."
 #. module: product_packaging_level
 #: model:ir.model.fields.selection,name:product_packaging_level.selection__product_packaging_level__name_policy__user_defined
 msgid "User Defined"
-msgstr ""
+msgstr "Door de gebruiker gedefinieerd"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,help:product_packaging_level.field_product_packaging__name_policy
 #: model:ir.model.fields,help:product_packaging_level.field_product_packaging_level__name_policy
 msgid ""
 "config to set name of product packaging. Three options:- The package level "
-"name (default)- The package type name (if groups='stock."
-"group_tracking_lot')- user defined: free text value defined"
+"name (default)- The package type name (if "
+"groups='stock.group_tracking_lot')- user defined: free text value defined"
 msgstr ""
-
-#~ msgid "Level sequence"
-#~ msgstr "Level volgorde"
+"config om de naam van de productverpakking in te stellen. Drie opties:- De "
+"naam van het verpakkingsniveau (standaard)- De naam van het verpakkingstype "
+"(als groups='stock.group_tracking_lot')- Door gebruiker gedefinieerd: vrije "
+"tekstwaarde gedefinieerd"

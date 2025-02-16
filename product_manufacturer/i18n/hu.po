@@ -1,22 +1,49 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * product_manufacturer
+# 	* product_manufacturer
 #
-# Translators:
-# OCA Transbot <transbot@odoo-community.org>, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-05 02:43+0000\n"
-"PO-Revision-Date: 2017-05-05 02:43+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2016\n"
-"Language-Team: Hungarian (https://www.transifex.com/oca/teams/23907/hu/)\n"
-"Language: hu\n"
+"POT-Creation-Date: 2025-02-14 19:18+0000\n"
+"PO-Revision-Date: 2025-02-14 19:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: \n"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__changeset_change_ids
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Változáskészlet-változások"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__changeset_ids
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__changeset_ids
+msgid "Changesets"
+msgstr "Changesets"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__count_changesets
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__count_changesets
+msgid "Count Changesets"
+msgstr "Count Changesets"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Számolja a függőben lévő változtatáskészlet-változásokat"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__count_pending_changesets
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Függő módosításkészletek számolása"
 
 #. module: product_manufacturer
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_id
@@ -30,26 +57,56 @@ msgstr "Gyártó"
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_pref
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_pref
 msgid "Manufacturer Product Code"
-msgstr ""
+msgstr "Gyártó termékkód"
 
 #. module: product_manufacturer
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_pname
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_pname
 msgid "Manufacturer Product Name"
-msgstr ""
+msgstr "Gyártó Termék neve"
 
 #. module: product_manufacturer
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_purl
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_purl
 msgid "Manufacturer Product URL"
-msgstr ""
+msgstr "Gyártó termék URL címe"
 
 #. module: product_manufacturer
 #: model:ir.model,name:product_manufacturer.model_product_template
 msgid "Product"
-msgstr ""
+msgstr "Termék"
 
 #. module: product_manufacturer
 #: model:ir.model,name:product_manufacturer.model_product_product
 msgid "Product Variant"
-msgstr ""
+msgstr "Termék"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__smart_search
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__smart_search
+msgid "Smart Search"
+msgstr "Intelligens keresés"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,help:product_manufacturer.field_product_product__count_pending_changeset_changes
+#: model:ir.model.fields,help:product_manufacturer.field_product_template__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "A bejegyzés függőben lévő módosításainak száma"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,help:product_manufacturer.field_product_product__count_pending_changesets
+#: model:ir.model.fields,help:product_manufacturer.field_product_template__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "A rekord folyamatban lévő módosításainak száma"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,help:product_manufacturer.field_product_product__count_changesets
+#: model:ir.model.fields,help:product_manufacturer.field_product_template__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "Az e rekordhoz tartozó módosítások teljes száma"
+
+#. module: product_manufacturer
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__user_can_see_changeset
+#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "A felhasználó láthatja a változtatáskészletet"
