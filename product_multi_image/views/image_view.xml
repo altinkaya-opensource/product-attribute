@@ -16,8 +16,8 @@
                     domain="[('product_tmpl_id', '=', owner_id)]"
                     placeholder="(keep empty for being visible for all variants)"
                 />
+                <field name="is_published" />
             </field>
-            <field name="is_published"/>
         </field>
     </record>
 
