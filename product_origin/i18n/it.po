@@ -6,44 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-14 19:18+0000\n"
-"PO-Revision-Date: 2025-02-14 19:18+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-05-22 17:37+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
-
-#. module: product_origin
-#: model:ir.model.fields,field_description:product_origin.field_product_product__changeset_change_ids
-#: model:ir.model.fields,field_description:product_origin.field_product_template__changeset_change_ids
-msgid "Changeset Changes"
-msgstr "Modifiche dell'insieme di modifiche"
-
-#. module: product_origin
-#: model:ir.model.fields,field_description:product_origin.field_product_product__changeset_ids
-#: model:ir.model.fields,field_description:product_origin.field_product_template__changeset_ids
-msgid "Changesets"
-msgstr "Insiemi di modifiche"
-
-#. module: product_origin
-#: model:ir.model.fields,field_description:product_origin.field_product_product__count_changesets
-#: model:ir.model.fields,field_description:product_origin.field_product_template__count_changesets
-msgid "Count Changesets"
-msgstr "Conta insiemi di modifiche"
-
-#. module: product_origin
-#: model:ir.model.fields,field_description:product_origin.field_product_product__count_pending_changeset_changes
-#: model:ir.model.fields,field_description:product_origin.field_product_template__count_pending_changeset_changes
-msgid "Count Pending Changeset Changes"
-msgstr "Conteggio modifiche dell'insieme di modifiche in attesa"
-
-#. module: product_origin
-#: model:ir.model.fields,field_description:product_origin.field_product_product__count_pending_changesets
-#: model:ir.model.fields,field_description:product_origin.field_product_template__count_pending_changesets
-msgid "Count Pending Changesets"
-msgstr "Conteggio insieme di modifiche in attesa"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: product_origin
 #: model:ir.model.fields,field_description:product_origin.field_product_product__state_id
@@ -76,12 +47,6 @@ msgid "Product Variant"
 msgstr "Variante prodotto"
 
 #. module: product_origin
-#: model:ir.model.fields,field_description:product_origin.field_product_product__smart_search
-#: model:ir.model.fields,field_description:product_origin.field_product_template__smart_search
-msgid "Smart Search"
-msgstr "Ricerca intelligente"
-
-#. module: product_origin
 #: model:ir.model.fields,field_description:product_origin.field_product_product__state_id_domain
 #: model:ir.model.fields,field_description:product_origin.field_product_template__state_id_domain
 msgid "State Id Domain"
@@ -94,26 +59,8 @@ msgid ""
 "Technical field, used to compute dynamically state domain depending on the "
 "country."
 msgstr ""
-"Campo tecnico, utilizzato per calcolare dinamicamente il dominio dello stato"
-" in funzione della nazione."
-
-#. module: product_origin
-#: model:ir.model.fields,help:product_origin.field_product_product__count_pending_changeset_changes
-#: model:ir.model.fields,help:product_origin.field_product_template__count_pending_changeset_changes
-msgid "The number of pending changes of this record"
-msgstr "Numero di modifiche di questo record in attesa"
-
-#. module: product_origin
-#: model:ir.model.fields,help:product_origin.field_product_product__count_pending_changesets
-#: model:ir.model.fields,help:product_origin.field_product_template__count_pending_changesets
-msgid "The number of pending changesets of this record"
-msgstr "Numero di insiemi di modifiche in attesa di questo record"
-
-#. module: product_origin
-#: model:ir.model.fields,help:product_origin.field_product_product__count_changesets
-#: model:ir.model.fields,help:product_origin.field_product_template__count_changesets
-msgid "The overall number of changesets of this record"
-msgstr "Numero totale di insiemi di modifiche di questo record"
+"Campo tecnico, utilizzato per calcolare dinamicamente il dominio dello stato "
+"in funzione della nazione."
 
 #. module: product_origin
 #. odoo-python
@@ -124,9 +71,3 @@ msgid ""
 "The state '%(state_name)s' doesn't belong to the country '%(country_name)s'"
 msgstr ""
 "Lo stato '%(state_name)s' non appartiene alla nazione '%(country_name)s'"
-
-#. module: product_origin
-#: model:ir.model.fields,field_description:product_origin.field_product_product__user_can_see_changeset
-#: model:ir.model.fields,field_description:product_origin.field_product_template__user_can_see_changeset
-msgid "User Can See Changeset"
-msgstr "L'utente può vedere l'insieme delle modifiche"

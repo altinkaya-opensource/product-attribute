@@ -1,49 +1,23 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* product_manufacturer
+# * product_manufacturer
 #
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-14 19:18+0000\n"
-"PO-Revision-Date: 2025-02-14 19:18+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2017-05-05 02:43+0000\n"
+"PO-Revision-Date: 2021-04-23 20:47+0000\n"
+"Last-Translator: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>\n"
+"Language-Team: Dutch (https://www.transifex.com/oca/teams/23907/nl/)\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
-
-#. module: product_manufacturer
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__changeset_change_ids
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__changeset_change_ids
-msgid "Changeset Changes"
-msgstr "Wijzigingen Wijzigingen"
-
-#. module: product_manufacturer
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__changeset_ids
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__changeset_ids
-msgid "Changesets"
-msgstr "Wijzigingssets"
-
-#. module: product_manufacturer
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__count_changesets
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__count_changesets
-msgid "Count Changesets"
-msgstr "Tel Wijzigingen"
-
-#. module: product_manufacturer
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__count_pending_changeset_changes
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__count_pending_changeset_changes
-msgid "Count Pending Changeset Changes"
-msgstr "In afwachting van wijzigingen tellen"
-
-#. module: product_manufacturer
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__count_pending_changesets
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__count_pending_changesets
-msgid "Count Pending Changesets"
-msgstr "Aantal Wijzigingen"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. module: product_manufacturer
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_id
@@ -57,56 +31,38 @@ msgstr "Fabrikant"
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_pref
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_pref
 msgid "Manufacturer Product Code"
-msgstr "Fabrikant Productcode"
+msgstr ""
 
 #. module: product_manufacturer
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_pname
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_pname
 msgid "Manufacturer Product Name"
-msgstr "Fabrikant Productnaam"
+msgstr ""
 
 #. module: product_manufacturer
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_product__manufacturer_purl
 #: model:ir.model.fields,field_description:product_manufacturer.field_product_template__manufacturer_purl
 msgid "Manufacturer Product URL"
-msgstr "Product URL fabrikant"
+msgstr ""
 
 #. module: product_manufacturer
 #: model:ir.model,name:product_manufacturer.model_product_template
 msgid "Product"
-msgstr "Product"
+msgstr ""
 
 #. module: product_manufacturer
 #: model:ir.model,name:product_manufacturer.model_product_product
 msgid "Product Variant"
-msgstr "Productvariant"
+msgstr ""
 
-#. module: product_manufacturer
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__smart_search
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__smart_search
-msgid "Smart Search"
-msgstr "Slim zoeken"
+#~ msgid "ManufacturerProduct Code"
+#~ msgstr "Fabrikant. Product Code"
 
-#. module: product_manufacturer
-#: model:ir.model.fields,help:product_manufacturer.field_product_product__count_pending_changeset_changes
-#: model:ir.model.fields,help:product_manufacturer.field_product_template__count_pending_changeset_changes
-msgid "The number of pending changes of this record"
-msgstr "Het aantal lopende wijzigingen van deze record"
+#~ msgid "ManufacturerProduct Name"
+#~ msgstr "Fabrikant Product naam"
 
-#. module: product_manufacturer
-#: model:ir.model.fields,help:product_manufacturer.field_product_product__count_pending_changesets
-#: model:ir.model.fields,help:product_manufacturer.field_product_template__count_pending_changesets
-msgid "The number of pending changesets of this record"
-msgstr "Het aantal hangende wijzigingssets van deze record"
+#~ msgid "ManufacturerProduct URL"
+#~ msgstr "Fabrikant Product URL"
 
-#. module: product_manufacturer
-#: model:ir.model.fields,help:product_manufacturer.field_product_product__count_changesets
-#: model:ir.model.fields,help:product_manufacturer.field_product_template__count_changesets
-msgid "The overall number of changesets of this record"
-msgstr "Het totale aantal wijzigingen van deze record"
-
-#. module: product_manufacturer
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_product__user_can_see_changeset
-#: model:ir.model.fields,field_description:product_manufacturer.field_product_template__user_can_see_changeset
-msgid "User Can See Changeset"
-msgstr "Gebruiker kan wijzigingen zien"
+#~ msgid "Product Template"
+#~ msgstr "productsjabloon"

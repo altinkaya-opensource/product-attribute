@@ -6,14 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-14 19:19+0000\n"
-"PO-Revision-Date: 2025-02-14 19:19+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2025-01-16 13:39+0000\n"
+"Last-Translator: samibc2c <sami.bouzidi@camptocamp.com>\n"
+"Language-Team: none\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: product_logistics_uom
 #: model_terms:ir.ui.view,arch_db:product_logistics_uom.product_template_form_view
@@ -50,7 +51,7 @@ msgstr ""
 #. module: product_logistics_uom
 #: model:ir.model,name:product_logistics_uom.model_res_config_settings
 msgid "Config Settings"
-msgstr "Paramètres de regroupement des achats"
+msgstr ""
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_res_config_settings__product_default_length_uom_id
@@ -83,6 +84,12 @@ msgid "Default unit of measure to express product weight"
 msgstr "Unité de mesure par défaut pour exprimer le poids du produit"
 
 #. module: product_logistics_uom
+#: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__weight
+#: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__weight
+msgid "Gross Weight"
+msgstr "Poids brut"
+
+#. module: product_logistics_uom
 #: model:ir.model,name:product_logistics_uom.model_product_template
 msgid "Product"
 msgstr "Produit"
@@ -90,7 +97,7 @@ msgstr "Produit"
 #. module: product_logistics_uom
 #: model:ir.model,name:product_logistics_uom.model_product_product
 msgid "Product Variant"
-msgstr "Variante de produit"
+msgstr "Variante de produite"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__show_volume_uom_warning
@@ -121,8 +128,8 @@ msgid ""
 "Technical field used to warn the user to change the weightuom since the "
 "value for product_weight is too small and has beenrounded."
 msgstr ""
-"Champ technique utilisé pour avertir l'utilisateur qu'il doit modifier l'udm"
-" poids du produit, car la valeur de product_weight est trop faible et a été "
+"Champ technique utilisé pour avertir l'utilisateur qu'il doit modifier l'udm "
+"poids du produit, car la valeur de product_weight est trop faible et a été "
 "arrondie."
 
 #. module: product_logistics_uom
@@ -140,7 +147,7 @@ msgstr "Le poids dans l'udm de Poids du produit."
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__volume
 #: model_terms:ir.ui.view,arch_db:product_logistics_uom.product_template_form_view
 msgid "Volume"
-msgstr ""
+msgstr "Volume"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__volume_uom_id
@@ -161,11 +168,9 @@ msgid "Volume unit of measure label"
 msgstr "Libellé de l'udm Volume"
 
 #. module: product_logistics_uom
-#: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__weight
-#: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__weight
 #: model_terms:ir.ui.view,arch_db:product_logistics_uom.product_template_form_view
 msgid "Weight"
-msgstr "Poids brut"
+msgstr "Poids"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__weight_uom_id
