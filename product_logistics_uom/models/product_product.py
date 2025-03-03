@@ -21,15 +21,15 @@ class ProductProduct(models.Model):
         "Volume in product UOM",
         digits="Volume",
         help="The volume in the product's volume UOM.",
-        # compute="_compute_product_volume",
-        # inverse="_inverse_product_volume",
+        compute="_compute_product_volume",
+        inverse="_inverse_product_volume",
     )
     product_weight = fields.Float(
         "Weight in product UOM",
         digits="Stock Weight",
         help="The weight in the product's weight UOM.",
-        # compute="_compute_product_weight",
-        # inverse="_inverse_product_weight",
+        compute="_compute_product_weight",
+        inverse="_inverse_product_weight",
     )
 
     show_volume_uom_warning = fields.Boolean(
@@ -46,49 +46,49 @@ class ProductProduct(models.Model):
         compute="_compute_show_weight_uom_warning",
     )
 
-    # @api.depends("product_volume", "product_tmpl_id.volume_uom_id")
-    # def _compute_product_volume(self):
-    #     odoo_volume_uom = (
-    #         self.product_tmpl_id._get_volume_uom_id_from_ir_config_parameter()
-    #     )
-    #     for product in self:
-    #         product.product_volume = odoo_volume_uom._compute_quantity(
-    #             qty=product.volume,
-    #             to_unit=product.volume_uom_id,
-    #             round=False,  # avoid losing information
-    #         )
-    #
-    # def _inverse_product_volume(self):
-    #     odoo_volume_uom = (
-    #         self.product_tmpl_id._get_volume_uom_id_from_ir_config_parameter()
-    #     )
-    #     for product in self:
-    #         product.volume = product.volume_uom_id._compute_quantity(
-    #             qty=product.product_volume,
-    #             to_unit=odoo_volume_uom,
-    #             round=False,  # avoid losing information
-    #         )
-    #
-    # @api.depends("product_weight", "product_tmpl_id.weight_uom_id")
-    # def _compute_product_weight(self):
-    #     odoo_weight_uom = (
-    #         self.product_tmpl_id._get_weight_uom_id_from_ir_config_parameter()
-    #     )
-    #     for product in self:
-    #         product.product_weight = odoo_weight_uom._compute_quantity(
-    #             qty=product.weight,
-    #             to_unit=product.weight_uom_id,
-    #             round=False,  # avoid losing information
-    #         )
-    #
-    # def _inverse_product_weight(self):
-    #     odoo_weight_uom = (
-    #         self.product_tmpl_id._get_weight_uom_id_from_ir_config_parameter()
-    #     )
-    #     for product in self:
-    #         product.weight = product.weight_uom_id._compute_quantity(
-    #             qty=product.product_weight, to_unit=odoo_weight_uom, round=False
-    #         )
+    @api.depends("product_volume", "product_tmpl_id.volume_uom_id")
+    def _compute_product_volume(self):
+        odoo_volume_uom = (
+            self.product_tmpl_id._get_volume_uom_id_from_ir_config_parameter()
+        )
+        for product in self:
+            product.product_volume = odoo_volume_uom._compute_quantity(
+                qty=product.volume,
+                to_unit=product.volume_uom_id,
+                round=False,  # avoid losing information
+            )
+
+    def _inverse_product_volume(self):
+        odoo_volume_uom = (
+            self.product_tmpl_id._get_volume_uom_id_from_ir_config_parameter()
+        )
+        for product in self:
+            product.volume = product.volume_uom_id._compute_quantity(
+                qty=product.product_volume,
+                to_unit=odoo_volume_uom,
+                round=False,  # avoid losing information
+            )
+
+    @api.depends("product_weight", "product_tmpl_id.weight_uom_id")
+    def _compute_product_weight(self):
+        odoo_weight_uom = (
+            self.product_tmpl_id._get_weight_uom_id_from_ir_config_parameter()
+        )
+        for product in self:
+            product.product_weight = odoo_weight_uom._compute_quantity(
+                qty=product.weight,
+                to_unit=product.weight_uom_id,
+                round=False,  # avoid losing information
+            )
+
+    def _inverse_product_weight(self):
+        odoo_weight_uom = (
+            self.product_tmpl_id._get_weight_uom_id_from_ir_config_parameter()
+        )
+        for product in self:
+            product.weight = product.weight_uom_id._compute_quantity(
+                qty=product.product_weight, to_unit=odoo_weight_uom, round=False
+            )
 
     @api.depends("product_volume", "product_tmpl_id.volume_uom_id", "volume")
     def _compute_show_volume_uom_warning(self):
