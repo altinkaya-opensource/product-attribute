@@ -66,10 +66,10 @@ addon | version | maintainers | summary
 [product_packaging_level_purchasable](product_packaging_level_purchasable/) | 16.0.1.1.0 |  | Control purchase of products via packaging settings.
 [product_packaging_level_salable](product_packaging_level_salable/) | 16.0.1.0.0 |  | Product Packaging level salable
 [product_pricelist_alternative](product_pricelist_alternative/) | 16.0.1.2.0 |  | Calculate product price based on alternative pricelists
-[product_pricelist_direct_print](product_pricelist_direct_print/) | 16.0.1.2.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Print price list from menu option, product templates, products variants or price lists
+[product_pricelist_direct_print](product_pricelist_direct_print/) | 16.0.1.3.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Print price list from menu option, product templates, products variants or price lists
 [product_pricelist_direct_print_company_group](product_pricelist_direct_print_company_group/) | 16.0.1.0.0 |  | Print Pricelist items using the company group model
 [product_pricelist_direct_print_website_sale](product_pricelist_direct_print_website_sale/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Extend Product Pricelist Direct Print for filter by public categories
-[product_pricelist_direct_print_xlsx](product_pricelist_direct_print_xlsx/) | 16.0.1.0.0 |  | Print price list in XLSX format
+[product_pricelist_direct_print_xlsx](product_pricelist_direct_print_xlsx/) | 16.0.1.1.0 |  | Print price list in XLSX format
 [product_pricelist_fixed_currency_rate](product_pricelist_fixed_currency_rate/) | 16.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Set a fixed currency rate between pricelists
 [product_pricelist_item_list_view](product_pricelist_item_list_view/) | 16.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | View and search the list of pricelist items
 [product_pricelist_revision](product_pricelist_revision/) | 16.0.1.0.1 |  | Product Pricelist Revision
@@ -93,7 +93,9 @@ addon | version | maintainers | summary
 [product_supplierinfo_code](product_supplierinfo_code/) | 16.0.1.0.0 |  | Allows to get main supplierinfo product_code on product level
 [product_supplierinfo_for_customer](product_supplierinfo_for_customer/) | 16.0.1.0.4 |  | Allows to define prices for customers in the products
 [product_supplierinfo_import_by_barcode](product_supplierinfo_import_by_barcode/) | 16.0.1.0.0 |  | Import supplier pricelists by barcode
+[product_supplierinfo_import_by_barcode_margin](product_supplierinfo_import_by_barcode_margin/) | 16.0.1.0.0 |  | Import supplier pricelists by barcode and margins
 [product_supplierinfo_revision](product_supplierinfo_revision/) | 16.0.1.0.0 |  | Product Supplierinfo Revision
+[product_supplierinfo_standard_price](product_supplierinfo_standard_price/) | 16.0.1.0.0 | [![quentinDupont](https://github.com/quentinDupont.png?size=30px)](https://github.com/quentinDupont) | Product supplier easily connected to product's standard price
 [product_supplierinfo_stock_picking_type](product_supplierinfo_stock_picking_type/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Product supplierinfo stock picking type
 [product_template_has_one_variant](product_template_has_one_variant/) | 16.0.1.0.1 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define a field on product template level to determine if it has only one variant
 [product_template_tags](product_template_tags/) | 16.0.1.1.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | This addon allow to add tags on products
