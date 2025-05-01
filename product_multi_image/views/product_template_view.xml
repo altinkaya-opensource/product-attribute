@@ -23,7 +23,7 @@
                     >
                         <tree>
                             <field name="sequence" widget="handle"/>
-                            <field name="image_main" widget="image" options="{'size': [100, 100]}"/>
+                            <field name="image_1920" widget="image" options="{'size': [100, 100]}"/>
                             <field name="name"/>
                             <field name="is_published"/>
                             <field name="product_variant_ids" widget="many2many_tags"/>
