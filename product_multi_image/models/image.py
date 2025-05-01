@@ -14,23 +14,6 @@ class Image(models.Model):
         "the website.",
     )
 
-    @api.model
-    def _default_product_image_storage(self):
-        """
-        Set default storage to db for product images
-        to make them easier to upload
-        :return:
-        """
-        if self.env.context.get("default_owner_model") in (
-            "product.template",
-            "product.product",
-        ):
-            return "db"
-        else:
-            return "filestore"
-
-    storage = fields.Selection(default=_default_product_image_storage)
-
     product_variant_ids = fields.Many2many(
         comodel_name="product.product",
         string="Visible in these variants",
