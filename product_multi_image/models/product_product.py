@@ -9,7 +9,7 @@ class ProductProduct(models.Model):
     _inherit = [_name, "base_multi_image.owner"]
 
     # Make this field computed for getting only the available images
-    image_ids = fields.One2many(
+    image_ids = fields.Many2many(
         comodel_name="base_multi_image.image",
         compute="_compute_image_ids",
         inverse="_inverse_image_ids",
