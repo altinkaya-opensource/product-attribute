@@ -33,15 +33,19 @@ class ProductTemplate(models.Model):
     )
 
     @api.model
-    def _calc_volume(self, product_length, product_height, product_width, uom_id):
-        volume = 0
-        if product_length and product_height and product_width and uom_id:
-            length_m = self.convert_to_meters(product_length, uom_id)
-            height_m = self.convert_to_meters(product_height, uom_id)
-            width_m = self.convert_to_meters(product_width, uom_id)
-            volume = length_m * height_m * width_m
-
-        return volume
+    def _calc_volume(
+        self, product_length, product_height, product_width, uom_id, volume_uom_id
+    ):
+        uom_litre = self.env.ref("uom.product_uom_litre")
+        try:
+            volume_litre = (
+                product_length * product_height * product_width * 1000.0
+            ) / (uom_id.factor**3)
+        except ZeroDivisionError:
+            volume_litre = 0
+        return uom_litre._compute_quantity(
+            qty=volume_litre, to_unit=volume_uom_id, round=False
+        )
 
     @api.depends(
         "product_length", "product_height", "product_width", "dimensional_uom_id"
@@ -53,6 +57,7 @@ class ProductTemplate(models.Model):
                 template.product_height,
                 template.product_width,
                 template.dimensional_uom_id,
+                template.volume_uom_id,
             )
 
     def convert_to_meters(self, measure, dimensional_uom):

@@ -16,7 +16,7 @@ class ProductProduct(models.Model):
         "Dimensional UoM",
         domain=lambda self: self._get_dimension_uom_domain(),
         help="UoM for length, height, width",
-        default=lambda self: self.env.ref("uom.product_uom_meter"),
+        default=lambda self: self.env.ref("uom.product_uom_cm"),
     )
     volume = fields.Float(
         compute="_compute_volume",
@@ -35,6 +35,7 @@ class ProductProduct(models.Model):
                 product.product_height,
                 product.product_width,
                 product.dimensional_uom_id,
+                product.volume_uom_id,
             )
 
     @api.model
