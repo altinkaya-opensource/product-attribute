@@ -22,7 +22,6 @@ class ProductProduct(models.Model):
         digits="Volume",
         help="The volume in the product's volume UOM.",
         compute="_compute_product_volume",
-        inverse="_inverse_product_volume",
     )
     product_weight = fields.Float(
         "Weight in product UOM",
@@ -46,28 +45,13 @@ class ProductProduct(models.Model):
         compute="_compute_show_weight_uom_warning",
     )
 
+    # We are calculating product_volume with product's volume_uom_id
+    # in `product_dimension` module, so we disabled compute/inverse
+    # methods for product_volume
     @api.depends("product_volume", "product_tmpl_id.volume_uom_id")
     def _compute_product_volume(self):
-        odoo_volume_uom = (
-            self.product_tmpl_id._get_volume_uom_id_from_ir_config_parameter()
-        )
         for product in self:
-            product.product_volume = odoo_volume_uom._compute_quantity(
-                qty=product.volume,
-                to_unit=product.volume_uom_id,
-                round=False,  # avoid losing information
-            )
-
-    def _inverse_product_volume(self):
-        odoo_volume_uom = (
-            self.product_tmpl_id._get_volume_uom_id_from_ir_config_parameter()
-        )
-        for product in self:
-            product.volume = product.volume_uom_id._compute_quantity(
-                qty=product.product_volume,
-                to_unit=odoo_volume_uom,
-                round=False,  # avoid losing information
-            )
+            product.product_volume = product.volume
 
     @api.depends("product_weight", "product_tmpl_id.weight_uom_id")
     def _compute_product_weight(self):
