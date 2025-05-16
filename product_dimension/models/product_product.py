@@ -25,7 +25,11 @@ class ProductProduct(models.Model):
     )
 
     @api.depends(
-        "product_length", "product_height", "product_width", "dimensional_uom_id"
+        "product_length",
+        "product_height",
+        "product_width",
+        "dimensional_uom_id",
+        "volume_uom_id",
     )
     def _compute_volume(self):
         template_obj = self.env["product.template"]
