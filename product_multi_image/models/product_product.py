@@ -30,8 +30,7 @@ class ProductProduct(models.Model):
                 )
             )
             product.image_ids = [(6, 0, images.ids)]
-            ## FIXME BUG: Since image fields are related with template, this lines
-            ## causes image computation loop.
+            # TODO: Related template image fields cause a computation loop here.
             # if product.image_ids:
             #     product.image_1920 = (
             #         product.image_ids[0].with_context(bin_size=False).image_1920

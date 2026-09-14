@@ -23,7 +23,6 @@ class ProductTemplate(models.Model):
         res = super().write(vals)
 
         if vals.get("image_ids"):
-            self.set_image_1920()   
+            self.set_image_1920()
 
         return res
-            

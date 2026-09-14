@@ -46,7 +46,7 @@ class ProductProduct(models.Model):
     )
 
     # We are calculating product_volume with product's volume_uom_id
-    # in `product_dimension` module, so we disabled compute/inverse
+    # in `product_dimension` module, so we disabled compute/inverse
     # methods for product_volume
     @api.depends("product_volume", "product_tmpl_id.volume_uom_id")
     def _compute_product_volume(self):
